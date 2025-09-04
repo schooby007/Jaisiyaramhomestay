@@ -1,0 +1,80 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body */
+body {
+  background: #f5faff;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(45deg, #ff9933, #ffcc66);
+  color: white;
+  padding: 1rem;
+}
+header .logo {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+header p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Sections */
+section {
+  padding: 1.2rem;
+}
+section h2 {
+  margin-bottom: 1rem;
+  color: #ff6600;
+}
+
+/* Media grid */
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.media-grid img,
+.media-grid video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* Highlights */
+.highlights ul {
+  list-style: none;
+  padding: 0;
+}
+.highlights li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+footer a {
+  color: #ffcc66;
+  text-decoration: none;
+}
