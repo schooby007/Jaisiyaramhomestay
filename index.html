@@ -8,59 +8,72 @@
   <link rel="icon" type="image/png" href="1000327453.jpg">
 </head>
 <body>
+  <!-- Header -->
   <header>
     <img src="1000327453.jpg" alt="Lord Ram & Sita" class="logo">
     <h1>Jai Siyaram Homestay</h1>
     <p>Your serene getaway in the heart of Munsiyari</p>
   </header>
 
+  <!-- About -->
+  <section class="about">
+    <h2>Welcome to Jai Siyaram Homestay</h2>
+    <p>
+      Nestled in the breathtaking Himalayas, our homestay offers peace, comfort,
+      and authentic mountain living. Experience local culture, home-cooked meals,
+      and panoramic views of the snow-clad peaks of Munsiyari.
+    </p>
+  </section>
+
+  <!-- Gallery -->
   <section class="gallery">
     <h2>Photo Gallery</h2>
-    <div class="slideshow-container">
-      <div class="slide fade"><img src="IMG-20250904-WA0007.jpg" alt="View"></div>
-      <div class="slide fade"><img src="IMG-20250904-WA0008.jpg" alt="View"></div>
-      <div class="slide fade"><img src="IMG-20250904-WA0011.jpg" alt="View"></div>
-      <div class="slide fade"><img src="IMG-20250904-WA0012.jpg" alt="View"></div>
-      <div class="slide fade"><img src="IMG-20250904-WA0013.jpg" alt="View"></div>
-      <div class="slide fade"><img src="IMG-20250904-WA0014.jpg" alt="View"></div>
+    <div class="media-grid">
+      <img src="IMG-20250904-WA0007.jpg" alt="View">
+      <img src="IMG-20250904-WA0008.jpg" alt="View">
+      <img src="IMG-20250904-WA0011.jpg" alt="View">
+      <img src="IMG-20250904-WA0012.jpg" alt="View">
+      <img src="IMG-20250904-WA0013.jpg" alt="View">
+      <img src="IMG-20250904-WA0014.jpg" alt="View">
     </div>
   </section>
 
+  <!-- Videos -->
   <section class="videos">
     <h2>Video Gallery</h2>
-    <video controls width="80%">
-      <source src="VID-20250904-WA0015.mp4" type="video/mp4">
-    </video>
-    <video controls width="80%">
-      <source src="VID-20250904-WA0016.mp4" type="video/mp4">
-    </video>
+    <div class="media-grid">
+      <video controls>
+        <source src="VID-20250904-WA0015.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="VID-20250904-WA0016.mp4" type="video/mp4">
+      </video>
+    </div>
   </section>
 
+  <!-- Highlights -->
+  <section class="highlights">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>🌄 Stunning views of Panchachuli peaks</li>
+      <li>🏡 Comfortable rooms with homely atmosphere</li>
+      <li>🥘 Delicious local home-cooked food</li>
+      <li>🚶‍♂️ Perfect for nature walks & treks</li>
+    </ul>
+  </section>
+
+  <!-- Location -->
   <section class="location">
     <h2>Location</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.081022028488!2d80.2385!3d30.0668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0b1e5a6822ef9%3A0x36f8c57e86884b1a!2sMunsiyari!5e0!3m2!1sen!2sin!4v1693560000000!5m2!1sen!2sin"
-      width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.081022028488!2d80.2385!3d30.0668"
+      width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>Contact Durga Singh: <a href="tel:07891234100">07891234100</a></p>
-    <p><a href="https://wa.me/917891234100" target="_blank">Chat on WhatsApp</a></p>
+    <p>📞 Contact Durga Singh: <a href="tel:07891234100">07891234100</a></p>
+    <p><a href="https://wa.me/917891234100" target="_blank">💬 Chat on WhatsApp</a></p>
+    <p>© 2025 Jai Siyaram Homestay, Munsiyari</p>
   </footer>
-
-  <script>
-    let slideIndex = 0;
-    showSlides();
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("slide");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      slides[slideIndex-1].style.display = "block";  
-      setTimeout(showSlides, 3000); // Change image every 3 seconds
-    }
-  </script>
 </body>
 </html>
